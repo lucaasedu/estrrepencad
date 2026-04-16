@@ -8,13 +8,18 @@ public class ex6 {
         System.out.println("Digite seu turno: ");
         turno = sc.nextLine();
 
-        if (turno == "manhã"){
-
+        if (turno.equals("manhã")){
+            System.out.println("8h às 12h");
         }
-
-
-
-
+        else if (turno.equals("tarde")){
+            System.out.println("13h ás 18h");
+        }
+        else if (turno.equals("noite")){
+            System.out.println("17h ás 23h");
+        }
+        else{
+            System.out.println("Turno inválido");
+        }
 
 
     }
